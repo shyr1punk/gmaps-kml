@@ -2,8 +2,8 @@ var map;
 var path = [];
 function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644)
+        zoom: 7,
+        center: new google.maps.LatLng(29.2586, -83.58166)
     });
     $.getJSON('lines.json', function(data) {
         $.each(data.lines, function (idx, line) {
